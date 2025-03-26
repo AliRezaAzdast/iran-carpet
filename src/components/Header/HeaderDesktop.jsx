@@ -1,0 +1,55 @@
+import React from "react";
+import { Link } from 'react-router-dom'
+import { CiSearch } from "react-icons/ci";
+import { MdLogin } from "react-icons/md";
+import { MdOutlineShoppingCart } from "react-icons/md";
+
+export default function HeaderDesktop() {
+  return (
+    <header className="hidden md:flex">
+      <div className="container">
+        <div className="flex justify-between mt-10">
+          <div className="flex flex-col gap-y-4">
+            <div className="flex items-center gap-x-5">
+              <h1 className="font-bold text-primary text-2xl">ایران فرش</h1>
+              <div className="flex items-center gap-4 px-3 w-100 h-10 rounded-lg bg-neutral3">
+                <CiSearch className="w-6 h-6 text-neutral9" />
+                <p className="text-lg text-neutral9">جستجو فرش</p>
+              </div>
+            </div>
+            <ul className="flex gap-x-10 text-black font-bold">
+            <li className="text-primary">
+                <Link to='/'>صفحه اصلی</Link>
+             </li>
+             <li>
+                <a href="">وبلاگ</a>
+             </li>
+             <li>
+                <a href="">تماس با ما</a>
+             </li>
+             <li>
+                <a href="">درباره ما</a>
+             </li>            
+            </ul>
+          </div>
+          <div className="flex items-start gap-x-3">
+            <Link
+              to='/shoppingcart'
+              className="flex items-center gap-x-2 h-10 font-bold text-lg text-primary border border-primary px-3 py-1 rounded-lg"
+            >
+              <MdOutlineShoppingCart className="h-6 w-6" />
+            </Link>
+            <Link 
+              to='/signin'
+              className="flex items-center gap-x-2 h-10 font-bold text-lg text-primary border border-primary px-3 py-1 rounded-lg"
+            >
+              <MdLogin className="h-6 w-6" />
+              ورود/ثبت نام
+            </Link>
+          </div>
+        </div>
+        <span className="inline-block bg-neutral6 w-full h-[1px]"></span>
+      </div>
+    </header>
+  );
+}
