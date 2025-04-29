@@ -14,8 +14,8 @@ export default function HeroSection() {
               تنوع بی نظیر فرش ها لذت ببر.
             </p>
             <div className="flex lg:gap-x-8 gap-x-2 items-center">
-                <a href="" className="text-primary sm:text-xl text-base font-bold border border-primary rounded-lg px-4 py-2"> محصولات ویژه ایرانی فرش</a>
-                <a href="" className="text-white sm:text-xl text-base font-bold bg-primary px-4 py-2 rounded-lg">عضویت در باشگاه مشتریان</a>
+                <a href="" className="text-primary  sm:text-xl text-base font-bold border border-primary rounded-lg px-4 py-2"> محصولات ویژه ایرانی فرش</a>
+                <a href="" className="text-white  sm:text-xl text-base font-bold bg-primary px-4 py-2 rounded-lg">عضویت در باشگاه مشتریان</a>
             </div>
           </div>
           <div className="flex-1/2 relative">
